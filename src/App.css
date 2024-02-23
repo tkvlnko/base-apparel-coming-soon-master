@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  margin: 0; 
+  padding: 0; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 68px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+}
+span {
+  font-weight: 300;
+  color: hsl(0, 42%, 61%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  color: hsl(0, 9%, 13%);
+}
+
+.content {
+  width: 50%;
+  background: url("./images/bg-pattern-desktop.svg");
+  box-sizing: border-box;
+  padding: 6rem 8rem;
+}
+
+.hero-img {
+  height: 100vh;
+  width: 42%;
+} 
+
+.hero-img > img {
+  object-fit: cover;
+  width: 100%; 
+  height: 100%; 
+}
+
+.circle {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%)) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+
+  width: 40px;
+  height: 40px;
+
+  margin-right: 1rem;
+}
+
+.logo-block {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 6rem;
 }
 
-.App-link {
-  color: #61dafb;
+.logo-block > p {
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 20px;
+  line-height: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
