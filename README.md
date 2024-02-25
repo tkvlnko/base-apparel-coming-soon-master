@@ -1,3 +1,10 @@
 #  Base Apparel coming soon page solution
+Tools used: React (JS), native CSS, HTML
 
-[Base Apparel coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0).
+
+Preview:
+[Base Apparel coming soon page challenge on Frontend Mentor](./design/desktop-preview.jpg).
+
+
+Mobile version
+[mobile version](./design/mobile-design.jpg)

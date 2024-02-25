@@ -26,11 +26,22 @@ p {
 
 .main {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  /* justify-content: space-between; */
   color: hsl(0, 9%, 13%);
+  box-sizing: border-box;
+}
+
+.hero-mobile {
+  display: none;
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+
   width: 58%;
   background: url("./images/bg-pattern-desktop.svg");
   background-repeat: repeat-x;
@@ -46,7 +57,7 @@ p {
 .hero-img > img {
   object-fit: cover;
   width: 100%; 
-  height: 100%; 
+  height: 100vh; 
 }
 
 .circle {
@@ -62,12 +73,19 @@ p {
 }
 
 .logo-block {
-  display: flex;
-  align-items: center;
   margin-bottom: 6rem;
 }
 
-.logo-block > p {
+.logo-block, .logo-block-mobile {
+  display: flex;
+  align-items: center;
+}
+
+.logo-block-mobile {
+  display: none;
+}
+
+.logo-block p, .logo-block-mobile p {
   font-weight: bold;
   letter-spacing: 2px;
   font-size: 20px;
@@ -137,8 +155,52 @@ form > img {
   right: 33%;
 }
 
-.hidden {
-  display: none;
+
+@media screen and (max-width: 1100px) {
+  .content {
+    padding: 2rem 4rem;
+  }
 }
 
+@media screen and (max-width: 880px) {
+  .main {
+    flex-direction: column;
+  }
+  .content {
+    width: 100%;
+    height: 100%;
+    justify-content: start;
+    padding: 5rem 4rem;
+  }
 
+  .hero-img, .logo-block {
+    display: none;
+  }
+
+  .hero-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .logo-block-mobile {
+    display: flex;
+  }
+  .hero-mobile > img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .content {
+    padding: 2rem 3rem;
+  }
+  .main {
+    justify-content: center;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+}

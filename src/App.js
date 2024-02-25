@@ -1,9 +1,9 @@
 // import logo from './logo.svg';
 import './App.css';
 import hero from "./images/hero-desktop.jpg";
-import arrow from "./images/icon-arrow.svg";
+import heroMobile from "./images/hero-mobile.jpg";
+
 import { userSchema } from './validations/userValidation';
-import alarmIcon from './images/icon-error.svg';
 
 function App() {
 
@@ -32,8 +32,6 @@ function App() {
         error.setAttribute("id", "error");
         error.style.marginLeft = "1rem";
         error.style.fontSize = "12px";
-        imgAlarm.classList.remove("hidden");
-
       }
     }
     else {
@@ -46,6 +44,15 @@ function App() {
   }
   return (
     <div className="main">
+        <div className="logo-block-mobile">
+          <div className="circle"></div>
+          <p>BASE<br/> APPAREL</p>
+        </div>
+
+        <div className="hero-mobile">
+          <img src={heroMobile} alt="hero-mobile"/>
+        </div>
+
       <div className="content">
         <div className="logo-block">
           <div className="circle"></div>
@@ -55,9 +62,8 @@ function App() {
         <p>Hello fellow shoppers! We're currently building our new fashion store. 
           Add your email below to stay up-to-date with announcements and our launch deals.</p>
           <form onSubmit={validate}>
-            <input type="text" placeholder="Email Address" id="email"/>
-            <img src={alarmIcon} alt="error-icon" className="hidden" id="errorIcon"/>
-            <div className="input-button">
+              <input type="text" placeholder="Email Address" id="email"/>
+              <div className="input-button">
               <input type="submit" value=""/>
             </div>
           </form>
@@ -72,3 +78,4 @@ function App() {
 }
 
 export default App;
+
