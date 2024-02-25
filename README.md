@@ -3,8 +3,8 @@ Tools used: React (JS), native CSS, HTML
 
 
 Preview:
-[Base Apparel coming soon page challenge on Frontend Mentor](./src/design/desktop-preview.jpg).
+[Base Apparel coming soon page challenge on Frontend Mentor](./src/images/desktop-preview.jpg).
 
 
 Mobile version
-[mobile version](./src/design/mobile-design.jpg)
+[mobile version](./src/images/mobile-design.jpg)
