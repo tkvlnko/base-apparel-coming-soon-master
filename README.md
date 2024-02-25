@@ -7,4 +7,5 @@ Preview:
 
 
 Mobile version
+
 ![mobile version](./src/images/mobile-design.jpg)
